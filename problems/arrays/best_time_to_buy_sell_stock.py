@@ -9,22 +9,21 @@ You want to maximize your profit by choosing a single day to buy one stock and c
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 """
 
-from typing import List
 
 
-def max_profit(prices: List[int]) -> int:
+def max_profit(prices: list[int]) -> int:
     """
     Find the maximum profit from buying and selling stock once.
-    
+
     Args:
         prices: List of stock prices by day
-        
+
     Returns:
         Maximum profit possible
-        
+
     Time Complexity: O(n)
     Space Complexity: O(1)
-    
+
     Examples:
         >>> max_profit([7, 1, 5, 3, 6, 4])
         5
@@ -33,34 +32,34 @@ def max_profit(prices: List[int]) -> int:
     """
     if len(prices) < 2:
         return 0
-    
+
     min_price = prices[0]
     max_profit_val = 0
-    
+
     for price in prices[1:]:
         # Update max profit if we can sell at current price
         max_profit_val = max(max_profit_val, price - min_price)
         # Update minimum price seen so far
         min_price = min(min_price, price)
-    
+
     return max_profit_val
 
 
-def max_profit_brute_force(prices: List[int]) -> int:
+def max_profit_brute_force(prices: list[int]) -> int:
     """
     Brute force solution for comparison.
-    
+
     Time Complexity: O(n²)
     Space Complexity: O(1)
     """
     max_profit_val = 0
     n = len(prices)
-    
+
     for i in range(n):
         for j in range(i + 1, n):
             profit = prices[j] - prices[i]
             max_profit_val = max(max_profit_val, profit)
-    
+
     return max_profit_val
 
 
@@ -73,10 +72,10 @@ if __name__ == "__main__":
         ([5], 0),
         ([], 0),
     ]
-    
+
     for prices, expected in test_cases:
         result = max_profit(prices)
         print(f"max_profit({prices}) = {result} (expected: {expected})")
         assert result == expected, f"Failed for {prices}"
-    
+
     print("All tests passed!")
