@@ -66,3 +66,6 @@ class TestMaxProfit:
             result1 = max_profit(prices)
             result2 = max_profit_brute_force(prices)
             assert result1 == result2
+
+def test_something():
+    assert True
