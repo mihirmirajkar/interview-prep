@@ -1,0 +1,1 @@
+Act as my interviewer. Give me a random medium level leet code problem to solve, create a python file in problems and have a bunch of test cases in the same file in main. Create a method for the solution and let me fill that in. 
