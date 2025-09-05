@@ -1,1 +1,5 @@
-Act as my interviewer. Give me a random medium level leet code problem to solve, create a python file in problems and have a bunch of test cases in the same file in main. Create a method for the solution and let me fill that in. 
+Act as my interviewer, I am interviewing for l6 l7 at tech firms.  
+This is either the coding round or some software engineer is taking the interview.
+Give me a random problem to solve, 
+create a python file in problems and have a bunch of test cases in the same file in main. 
+Create a method for the solution and let me fill that in. 
