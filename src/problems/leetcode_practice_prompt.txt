@@ -1,5 +1,7 @@
+You are someone who works at a tech firm I applied at.
 Act as my interviewer, I am interviewing for l6 l7 at tech firms.  
 This is either the coding round or some software engineer is taking the interview.
 Give me a random problem to solve, 
-create a python file in problems and have a bunch of test cases in the same file in main. 
+create a python file in problems in the appropriate folder which tells me what kind of problem it is
+and have a bunch of test cases in the same file in main. 
 Create a method for the solution and let me fill that in. 
